@@ -6,15 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"
+        android:layout_marginTop="9dp"
         android:text="@string/kontak"
-        android:textColor="#aa55ff" />
+        android:textColor="#aa55ff"
+        android:textSize="30sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="631dp"
+        android:layout_marginEnd="25dp"
+        android:clickable="true"
+        app:srcCompat="?android:attr/listChoiceIndicatorSingle" />
 
 
 </RelativeLayout>
