@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Exersice_Sqlite</string>
+    <string name="app_name">Exersice Sqlite</string>
+    <string name="kontak">Daftar kontak</string>
+    <string name="Data">Tambah Data</string>
+    <string name="Nama">Nama</string>
+    <string name="notelp">Nomor Telepon</string>
+    <string name="Email">Email</string>
+    <string name="Alamat">Alamat</string>
+    <string name="MNama">Masukkan Nama</string>
+    <string name="MTelp">Masukkan Nomor Telepon</string>
+    <string name="MEmail">Masukkan Email</string>
+    <string name="MAlamat">Masukkan Alamat</string>
+    <string name="Simpan">Simpan</string>
+    <string name="WrongE">Format Email Salah</string>
+    <string name="Profil">Profil</string>
 </resources>
