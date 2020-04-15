@@ -36,7 +36,7 @@
                 android:text="@string/Nama" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/editTextName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -57,7 +57,7 @@
                 android:text="@string/notelp" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/editTextTelp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -77,7 +77,7 @@
                 android:text="@string/Email" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/editTextEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -97,7 +97,7 @@
                 android:text="@string/Alamat" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/editTextAlamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -111,6 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/Simpan" />
+        android:text="@string/Simpan"
+        android:onClick="run"/>
 
 </RelativeLayout>
