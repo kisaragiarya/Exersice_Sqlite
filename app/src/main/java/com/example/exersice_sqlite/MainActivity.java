@@ -7,6 +7,7 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -54,6 +55,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
     }
+
+
+
 
     public boolean onKeyDown(int keycode, KeyEvent event) {
         if (keycode == KeyEvent.KEYCODE_BACK) {
