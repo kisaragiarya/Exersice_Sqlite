@@ -81,14 +81,8 @@ public class DisplayData extends AppCompatActivity {
         if (nama.getText().toString().equals("") ||
                 phone.getText().toString().equals("") ||
                 alamat.getText().toString().equals("") ||
-                email.getText().toString().equals("")) {
+                email.getText().toString().equals("") ) {
             Toast.makeText(getApplicationContext(), "data harus diisi semua !", Toast.LENGTH_LONG).show();
-        } else {
-            mydb.insertContact(nama.getText().toString(), phone.getText().toString(), alamat.getText().toString(), email.getText().toString());
-            Toast.makeText(getApplicationContext(), "insert data berhasil", Toast.LENGTH_LONG).show();
-
-            Intent i = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(i);
         } if (emailu.matches(formatEmail)){
             mydb.insertContact(nama.getText().toString(), phone.getText().toString(), email.getText().toString(), alamat.getText().toString());
             Toast.makeText(getApplicationContext(), "Insert Data Berhasil", Toast.LENGTH_LONG).show();
