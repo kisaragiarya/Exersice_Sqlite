@@ -3,11 +3,10 @@ package com.example.exersice_sqlite;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-
+import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.text.TextUtils;
+import android.view.ContextMenu;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,12 +14,14 @@ import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
+import android.widget.ListView;
+import java.util.ArrayList;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -72,6 +73,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (v == fab) {
             Intent intent = new Intent(this, DisplayData.class);
             startActivity(intent);
+        }
+    }
+
+    @Override
+    public boolean onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.edit:
+                Toast.makeText(this, "Menu Edit", Toast.LENGTH_SHORT).show();
+                return true;
+                case R.id.hapus:
+                Toast.makeText(this, "Menu Hapus", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onContextItemSelected(item);
         }
     }
 }
